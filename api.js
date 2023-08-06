@@ -32,7 +32,7 @@ export const fetchAndRenderTasks = (token) => {
 
                 return {
                     name: comment.author.name,
-                    // date: createDate,
+                    date: date,
                     text: comment.text,
                     likes: comment.likes,
                     isLikes: false,
