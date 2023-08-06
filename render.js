@@ -61,7 +61,7 @@ export const renderUsersComments = (usersComments, listElement) => {
 
     const usersCommentsHTML = usersComments.map((usersComment, index) => {
 
-        const createDate = format(new Date(usersComments.created_at), "dd/MM/yyyy hh:mm");
+        const createDate = format(new Date(usersComment.date), "dd/MM/yyyy hh:mm");
         return `<ul id="list" class="comment">
         <div class="comment-header">
         <div>${usersComment.name}</div>
